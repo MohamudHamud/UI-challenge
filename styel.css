@@ -1,0 +1,45 @@
+*body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #d2d2f2;
+}
+.hed{
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding: 5px;
+    display: inline-block;
+   box-shadow:  0px -5px 0px 0px  lightblue;
+   width: 100%;
+}
+
+#items{
+    width: 80%;
+    padding: 2px;
+    margin: 10px;
+}
+.part1,.fourth,.third,.second{
+    display: inline-block;
+    width: 24%;
+    margin: 3px;
+    
+    /* border: 2px solid red; */
+}
+
+
+#empty{
+    width: 2%;
+    margin-right: -10px;
+}
+
+
+
+#start{
+    width: 90%;
+    margin: 6px;
+    padding: 3px;
+    
+}
+#purchase{
+    margin-top: 100px;
+}

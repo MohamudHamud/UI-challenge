@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styel.css">
+    <title>UI Challenge</title>
+</head>
+<body>
+    <header class="hed">
+        <div class="part1">
+            <label>Supplier : </label> <br>
+            <select name="items" id="items">
+                
+                <option value="ABC">ABC</option>
+                <option value="ABD">ABD</option>
+                <option value="RWE">RWE</option>
+                </select> <br>
+                <label id="address">Address :</label> 
+            </div>
+            <div class="second">
+                <label id="Reference">Reference No : </label> <br>
+                <input type="text"  required> <br>
+                <label id="location">Business Location : </label>
+                <select name="location" id="loctaion">
+                <option value="please select">please select</option>
+                    <option value="Adisabada">AddisAbaba</option>
+                    <option value="Hawasa">Hawasa</option>
+                    </select> 
+                </div>
+                <div class="third">
+                    <label id="purchase">purchase Date : </label>
+    
+
+                    <input type="date" id="start" name="purchase date"
+                           value="2018-03-27"
+                           min="2018-01-01" max="2018-12-31">  <br>
+                           <label>Pay term :</label> 
+                           
+                           <select name="location" id="loctaion">
+                            <option value="please select">please select</option>
+                                <option value="VIS Card">VIS Card</option>
+                                <option value="Master Card">Master Card</option>
+                                
+                                </select> </div><div class="fourth">
+                                <label>Purcahse status :</label> 
+                           <select name="pchstatus" id="pchstatus">
+                            <option value="please select">please select</option>
+                                <option value="Cash">Cash </option>
+                                <option value="Banking"> Banking</option>
+                                </select> <br>
+                                <label>Attach Documnet :</label>
+                                <input type="file" name="myfile"> 
+                                <p>max file size : 5MB <br> allowed file .pdf .csv .doc .docx .jpeg .jpg .png</p></div>
+       
+    </header>
+    <hr>
+    
+</body>
+</html>
