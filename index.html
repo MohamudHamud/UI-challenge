@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styel.css">
     <title>UI Challenge</title>
 </head>
@@ -11,7 +12,8 @@
     <header class="hed">
         <div class="part1">
             <label>Supplier : </label> <br>
-            <select name="items" id="items">
+            <i class="fa-solid fa-user" style="margin-right: -11px;"></i>
+             <select name="items" id="items">
                 
                 <option value="ABC">ABC</option>
                 <option value="ABD">ABD</option>
@@ -21,7 +23,7 @@
             </div>
             <div class="second">
                 <label id="Reference">Reference No : </label> <br>
-                <input type="text"  required> <br>
+                <input id="Referenceinput" type="text"  required> <br>
                 <label id="location">Business Location : </label>
                 <select name="location" id="loctaion">
                 <option value="please select">please select</option>
@@ -51,11 +53,94 @@
                                 <option value="Banking"> Banking</option>
                                 </select> <br>
                                 <label>Attach Documnet :</label>
-                                <input type="file" name="myfile"> 
+                                <input type="file" name="myfile" id="myfile"> 
                                 <p>max file size : 5MB <br> allowed file .pdf .csv .doc .docx .jpeg .jpg .png</p></div>
        
     </header>
     <hr>
-    
+    <div class="middle">
+ 
+
+   <button <a href="#" class="impro">Import Product </a> </button>
+    <button type="submit"><i class="fa fa-search"></i></button>
+    <input type="text" placeholder="Search.." class="search" name="search">
+    <i class='fas fa-plus'></i><a href="#" class="addpro"> Add New Product </a>
+ 
+    <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Product Name</th>
+            <th>Purchase Quantity</th>
+            <th>Unit Cost(Before Discount)</th>
+            <th>Discount Percent</th>
+            <th>Unit Cost(Before Tax)</th>
+            <th>Line Total</th>
+            <th>Profit Margin%</th>
+            <th>Unit Selling Price(inc. tax)</th>
+            <th><i style="font-size:24px" class="fa">&#xf014;</i></th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Current stock</td>
+                <td>1.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>X</td>
+              </tr>
+             
+          </tbody>
+        </table>
+        <select name="Price" id="Price">
+            <option value="Price">please select</option>
+                <option value="100 Br">100 Br</option>
+                <option value="100 Br">200 Br</option>
+                </select> 
+    </div>
+    <div class="netprice">
+        <p>Total Items :  <span>$1.00</span></p>
+        <p>Net Total Amount : <span>$0.00</span></p>
+      </div>
+      <hr  style="width: 100%; color: blue;">
+    <footer>
+
+        <label class="Discount">Discount Type :</label>
+        <select name="disc" id="disc">
+            <option value="None">None </option>
+                <option value=" Br"> Bir</option>
+                <option value=" $"> dollar</option>
+                </select> 
+                <label class="Discountamount">Discount Amount :</label>
+                <input type="number"  id="disam" placeholder="0">
+                <div class="discountfooter">
+                <p >Discount (-):  <span>$0.00</span></p> </div>
+<hr>
+<div class="last">
+                <p>Add Payment </p>
+                <p >Advance Balance :  <span>$0.00</span></p> </div>
+                <label class="Amount">Amount :</label>
+                <i class="fa-solid fa-money-bill-1"></i><input type="number" class="Amount" placeholder="0.00" required>
+                <label id="purchase">Paid On : </label>
+                <input type="date" id="purchase" name="paid"
+                       value="2023-03-27"
+                       min="2018-01-01" max="2018-12-31"> 
+               <label id="pymet">Payment Method :</label> 
+                <i class="fa-solid fa-money-bill-1"></i><select name="pymet" id="pymet">
+                    <option value="Cash">Cash </option> 
+                        <option value=" E-Birr"> E-Birr</option>
+                        <option value=" dollar"> dollar</option>
+                        </select> 
+                        <label class="txtarea">Payment Note :</label>
+                <textarea  class="txtarea"></textarea>
+               
+                       
+                    </div>
+    </footer>
 </body>
 </html>
