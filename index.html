@@ -12,7 +12,7 @@
     <header class="hed">
         <div class="part1">
             <label>Supplier : </label> <br>
-            <i class="fa-solid fa-user" style="margin-right: -11px;"></i>
+            <i class="fa-solid fa-user" style="margin-right: -18px;"></i>
              <select name="items" id="items">
                 
                 <option value="ABC">ABC</option>
@@ -62,10 +62,10 @@
  
 
    <button <a href="#" class="impro">Import Product </a> </button>
-    <button type="submit"><i class="fa fa-search"></i></button>
+    <button type="submit" class="ser1"><i class="fa fa-search" ></i></button>
     <input type="text" placeholder="Search.." class="search" name="search">
     <i class='fas fa-plus'></i><a href="#" class="addpro"> Add New Product </a>
- 
+
     <table>
         <thead>
           <tr>
@@ -123,24 +123,31 @@
 <hr>
 <div class="last">
                 <p>Add Payment </p>
-                <p >Advance Balance :  <span>$0.00</span></p> </div>
-                <label class="Amount">Amount :</label>
-                <i class="fa-solid fa-money-bill-1"></i><input type="number" class="Amount" placeholder="0.00" required>
+                <p >Advance Balance :  <span>$0.00</span></p> 
+               <div class="inp"> <label class="lbl">Amount :</label>
+                <i class="fa-solid fa-money-bill-1 " style="margin: au
+                ;"></i><input type="number" class="Amount" placeholder="0.00" required>
                 <label id="purchase">Paid On : </label>
                 <input type="date" id="purchase" name="paid"
                        value="2023-03-27"
                        min="2018-01-01" max="2018-12-31"> 
-               <label id="pymet">Payment Method :</label> 
+                       <br> <label id="pymet">Payment Method :</label> 
                 <i class="fa-solid fa-money-bill-1"></i><select name="pymet" id="pymet">
                     <option value="Cash">Cash </option> 
                         <option value=" E-Birr"> E-Birr</option>
                         <option value=" dollar"> dollar</option>
                         </select> 
-                        <label class="txtarea">Payment Note :</label>
+                        <br><label class="txtarea">Payment Note :</label>
                 <textarea  class="txtarea"></textarea>
                
-                       
+            </div>
                     </div>
     </footer>
+    <hr>
+    <div class="save">
+ <p>Payment Due : <span>$ 0.00</span></p>
+ <button type="save">Save</button>
+    </div>
+    <script src="UIChallenge.js"></script>
 </body>
 </html>
